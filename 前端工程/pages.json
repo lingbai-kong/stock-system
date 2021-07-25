@@ -1,0 +1,149 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/login/login",                                                                                  
+            "style": {
+        		"navigationBarTitleText": "登录",
+        		"navigationStyle":"custom",
+        		"app-plus":{
+        			"titleNView":false
+        		},
+        		"enablePullDownRefresh": false
+        	}
+            
+        }
+		,{
+		    "path" : "pages/home/home",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "首页",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+				},
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+            "path" : "pages/quotation/quotation",
+			"style": {
+				"navigationBarTitleText": "行情",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+				},
+				"enablePullDownRefresh": false,
+				"onReachBottonDistance":50
+			}
+        }
+		,{
+            "path" : "pages/Kline/Kline",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "K线",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/manage/manage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/select/select",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "自选",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+				},
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/deal/deal",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "交易",
+				"navigationStyle":"custom",
+				"app-plus":{
+					"titleNView":false
+				},
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/changepw/changepw",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改密码",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#f9273f",
+		"backgroundColor": "white"
+	},
+	"tabBar":{
+		"backgroundColor": "#f0f0f0",
+		"selectedColor":"#f9273f",
+		"color":"#262822",
+		"list":[
+			{
+				"pagePath":"pages/home/home",
+				"text":"首页",
+				"iconPath":"./static/home.png",
+				"selectedIconPath":"./static/home_sel.png"
+			},
+			{
+				"pagePath":"pages/select/select",
+				"text":"自选",
+				"iconPath":"./static/select.png",
+				"selectedIconPath":"./static/select_sel.png"
+			},
+			{
+				"pagePath":"pages/quotation/quotation",
+				"text":"行情",
+				"iconPath":"./static/quotation.png",
+				"selectedIconPath":"./static/quotation_sel.png"
+			},
+			{
+				"pagePath":"pages/deal/deal",
+				"text":"交易",
+				"iconPath":"./static/deal.png",
+				"selectedIconPath":"./static/deal_sel.png"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
